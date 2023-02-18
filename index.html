@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="r-modal-backdrop">
+      <div class="r-modal">
+        <button type="button" class="r-modal-close-btn">X</button>
+        <p class="r-modal-name">ЗАБРОНЮВАТИ НОМЕР</p>
+        <form class="r-modal-form">
+          <div class="r-modal-form-thumb">
+            <label class="r-modal-list">
+              <input
+                class="r-modal-input"
+                type="text"
+                name="user-name"
+                placeholder="Ваше ім’я"
+                pattern="^[А-Яа-яЁё\s]+$"
+                required
+              />
+              <span class="r-modal-label-name">На кого забронювати номер?</span>
+            </label>
+            <label class="r-modal-list">
+              <input
+                class="r-modal-input"
+                type="tel"
+                name="user-tel"
+                placeholder="+38 (___) ___-__-__"
+                pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+                required
+              />
+              <span class="r-modal-label-name">Номер телефону</span>
+            </label>
+            <label class="r-modal-list">
+              <select class="r-modal-input" name="user-room" required>
+                <option value="2">Двомісний номер</option>
+                <option value="3">Трохмісний номер</option>
+                <option value="2L">Двомісний люкс</option>
+              </select>
+              <span class="r-modal-label-name">Категорія номеру</span>
+            </label>
+            <label class="r-modal-list">
+              <select class="r-modal-input" name="date-start" required>
+                <option value="today">Сьогодні</option>
+                <option value="tomorrow">Завтра</option>
+              </select>
+              <span class="r-modal-label-name">Дата заїзду</span>
+            </label>
+            <label class="r-modal-list">
+              <select class="r-modal-input" name="date-finish" required>
+                <option value="today">Сьогодні</option>
+                <option value="tomorrow">Завтра</option>
+              </select>
+              <span class="r-modal-label-name">Дата виїзду</span>
+            </label>
+          </div>
+          <button type="submit" class="r-modal-send-btn">
+            ОФОРМИТИ БРОНЮВАННЯ
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
